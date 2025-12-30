@@ -1,5 +1,3 @@
-# Add-Type -AssemblyName PresentationFramework
-# Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName PresentationFramework, WindowsBase, System.Xaml, System.Windows.Forms, System.Drawing
 
 try {
@@ -75,8 +73,6 @@ function Select-Collection {
         $Devices    = (Get-LiquitDeviceCollectionMember -DeviceCollection $Collection).Name
 
         $MembersList.Items.Clear()
-        #$DeviceList.Items.Clear()
-        #$TextFile.Text = $null
 
         $Devices | Sort-Object | ForEach-Object {
             $MembersList.Items.Add($_)
