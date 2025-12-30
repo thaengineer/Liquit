@@ -3,7 +3,7 @@
 ### Requirements
 
 - [Application Workspace PowerShell Module](https://download.liquit.com/)
-- Edit LiquitCollectionMemberMgmt.ps1 and modify the following variables so that it can make the api connection.
+- Edit LiquitCollectionMemberMgmt.ps1 and modify the following variables so that it can make the api connection.  
 `$LiquitUri   = ''`
 `$UserName    = ''`
 `$Password    = ConvertTo-SecureString -String '' -AsPlainText -Force`
